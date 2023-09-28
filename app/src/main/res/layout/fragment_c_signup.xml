@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CSignup"
+    android:background="#1d67de"
+    >
+
+    <Button
+        android:id="@+id/btnCBack2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawableTint="@color/white" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CATERER SECTION"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@+id/sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="#cf1919" />
+
+    <ScrollView
+        android:layout_alignTop="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:maxWidth="350dp"
+                android:maxHeight="470dp"
+                android:minWidth="350dp"
+                android:minHeight="470dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imgCaterer"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sample"
+                    />
+
+
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnAddPic"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+                android:drawableTint="@color/white"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/cFirstname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_round_person_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="First name"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cLastname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_round_person_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Last name"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cBusinessname"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_business_center_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Business name"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cAddress"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Address"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cSignUsername"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_round_person_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Username"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58" />
+
+            <EditText
+                android:id="@+id/cSignPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Password"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cInstagram"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/in"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Instagram"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cFacebook"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/fb"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Facebook"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cContact"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_call_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Contact"
+                android:inputType="textLongMessage"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/cBio"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="320dp"
+                android:background="@drawable/custom_input"
+                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Bio"
+                android:inputType="textMultiLine"
+                android:paddingStart="12dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/black"
+                android:textColorHint="#5a5c58"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnCSign"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#cf1919"
+                android:fontFamily="monospace"
+                android:text="Sign up"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnCLogin"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Already have an account?"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnCLog"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="55dp"
+                android:height="30dp"
+                android:backgroundTint="#fce9b3"
+                android:fontFamily="sans-serif-medium"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginBottom="100dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

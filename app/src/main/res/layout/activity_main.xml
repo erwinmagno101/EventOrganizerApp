@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1d67de"
+    >
+
+
+    <TextView
+        android:id="@+id/titleIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Organizer App"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_alignTop="@+id/titleIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan Your Special Day With Us!"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imgIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intro" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#cf1919"
+        android:fontFamily="monospace"
+        android:text="Caterer"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#239c1a"
+        android:fontFamily="monospace"
+        android:text="Customer"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Here As?"
+        android:layout_alignBottom="@+id/btn1"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="monospace"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+
+</RelativeLayout>
